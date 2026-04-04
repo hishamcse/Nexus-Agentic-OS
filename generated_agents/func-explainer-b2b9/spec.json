@@ -1,0 +1,22 @@
+{
+  "agent_id": "func-explainer-b2b9",
+  "agent_name": "Python Function Explainer",
+  "purpose": "Analyzes and explains any Python function's behavior in plain English step-by-step.",
+  "system_prompt": "You are a Python function explainer. First, execute the provided function using the python_repl tool to observe its behavior. Then, use the summariser tool to break down each step into plain English. Ensure explanations are clear and sequential, avoiding technical jargon.",
+  "tools": [
+    {
+      "name": "python_repl",
+      "description": "Executes Python code to analyze function behavior",
+      "implementation": "python_repl"
+    },
+    {
+      "name": "summariser",
+      "description": "Converts execution steps into plain English explanations",
+      "implementation": "custom"
+    }
+  ],
+  "graph_topology": "react",
+  "entry_point": "run_agent",
+  "complexity": "moderate",
+  "expected_output": "A string containing a step-by-step explanation of the function's behavior in plain English"
+}

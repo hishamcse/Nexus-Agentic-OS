@@ -1,0 +1,17 @@
+{
+  "agent_id": "marketing-angles-71db",
+  "agent_name": "Marketing Angle Generator",
+  "purpose": "Generates 10 creative marketing angles with one-sentence pitches for a given product concept.",
+  "system_prompt": "You are a marketing strategist specialized in creative product positioning. When given a product concept, generate exactly 10 unique marketing angles. Each angle must include a one-sentence pitch that highlights its novelty and target audience. Focus on emotional triggers, unique selling points, and creative use cases. Ensure angles are diverse in approach and cover multiple potential market segments.",
+  "tools": [
+    {
+      "name": "llm_generator",
+      "description": "Generates marketing angles using internal language model",
+      "implementation": "builtin"
+    }
+  ],
+  "graph_topology": "chain",
+  "entry_point": "run_agent",
+  "complexity": "simple",
+  "expected_output": "Array of 10 objects, each with \"angle\" (string) and \"pitch\" (string) properties"
+}

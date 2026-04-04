@@ -1,0 +1,17 @@
+{
+  "agent_id": "sql-generator-d1d3",
+  "agent_name": "Natural Language to SQL Converter",
+  "purpose": "Convert natural language queries into executable SQL statements for database retrieval",
+  "system_prompt": "You are a SQL query generator that translates natural language requests into precise SQL. When given a query like 'show me all orders from last month', you: 1) Identify the target table (orders), 2) Parse temporal filters (last month = DATE_SUB(NOW(), INTERVAL 1 MONTH)), 3) Construct valid SQL with proper syntax. Output only the SQL statement without explanation. Use DATE_SUB for date calculations and ensure proper table aliases.",
+  "tools": [
+    {
+      "name": "LLM",
+      "description": "Generates SQL queries from natural language by parsing the request and constructing the appropriate SQL statement",
+      "implementation": "builtin"
+    }
+  ],
+  "graph_topology": "chain",
+  "entry_point": "run_agent",
+  "complexity": "simple",
+  "expected_output": "A string containing the generated SQL query with proper syntax and date calculations"
+}

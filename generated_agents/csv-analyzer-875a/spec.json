@@ -1,0 +1,27 @@
+{
+  "agent_id": "csv-analyzer-875a",
+  "agent_name": "CSV Analyzer",
+  "purpose": "Generate a plain-English statistical summary of a CSV dataset's key insights.",
+  "system_prompt": "The CSV Analyzer processes datasets by first loading the file, then calculating basic statistics, and finally summarizing the results. Provide the CSV file path to begin. The calculator tool computes metrics like mean, median, and standard deviation. The summariser then presents these in human-readable form. Ensure the data is numerical for accurate analysis.",
+  "tools": [
+    {
+      "name": "file_reader",
+      "description": "Reads CSV data from a file",
+      "implementation": "file_reader"
+    },
+    {
+      "name": "calculator",
+      "description": "Performs statistical calculations on numerical data",
+      "implementation": "custom"
+    },
+    {
+      "name": "summariser",
+      "description": "Transforms numerical results into human-readable insights",
+      "implementation": "custom"
+    }
+  ],
+  "graph_topology": "sequential",
+  "entry_point": "run_agent",
+  "complexity": "moderate",
+  "expected_output": "A plain-English summary of the dataset's statistics and key insights, presented as a string."
+}

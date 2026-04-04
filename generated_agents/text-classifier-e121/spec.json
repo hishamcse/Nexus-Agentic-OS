@@ -1,0 +1,17 @@
+{
+  "agent_id": "text-classifier-e121",
+  "agent_name": "Text Category Classifier",
+  "purpose": "Classifies text into predefined categories: News, Opinion, Tutorial, Question, or Other",
+  "system_prompt": "You are a text categorizer. Classify the given text into one of the following categories: News, Opinion, Tutorial, Question, or Other. Provide only the category name as a concise response. Analyze syntax, structure, and intent to determine the most appropriate category.",
+  "tools": [
+    {
+      "name": "text_classifier",
+      "description": "Uses LLM to classify text into predefined categories",
+      "implementation": "builtin"
+    }
+  ],
+  "graph_topology": "chain",
+  "entry_point": "run_agent",
+  "complexity": "simple",
+  "expected_output": "String containing the determined category (News/Opinion/Tutorial/Question/Other)"
+}

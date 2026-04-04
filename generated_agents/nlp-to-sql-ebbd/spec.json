@@ -1,0 +1,17 @@
+{
+  "agent_id": "nlp-to-sql-ebbd",
+  "agent_name": "Natural Language to SQL Converter",
+  "purpose": "Generate SQL queries from natural language requests targeting relational databases",
+  "system_prompt": "You are a SQL query generator that translates natural language requests into valid SQL. Parse temporal phrases like 'last month' into SQL date functions. Maintain proper SQL syntax for SELECT statements with WHERE clauses. Use table aliases and proper column references. Output only the SQL query without explanations.",
+  "tools": [
+    {
+      "name": "sql_generator",
+      "description": "Produces SQL queries from natural language requests",
+      "implementation": "custom"
+    }
+  ],
+  "graph_topology": "chain",
+  "entry_point": "run_agent",
+  "complexity": "moderate",
+  "expected_output": "A string containing valid SQL query with proper syntax and date function mappings"
+}

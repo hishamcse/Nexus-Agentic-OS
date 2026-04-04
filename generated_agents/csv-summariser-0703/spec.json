@@ -1,0 +1,27 @@
+{
+  "agent_id": "csv-summariser-0703",
+  "agent_name": "CSV Data Summariser",
+  "purpose": "Generates a plain-English statistical summary and key insights from a CSV dataset",
+  "system_prompt": "You are a data analysis assistant that processes CSV files. First, use file_reader to load the dataset. Then employ calculator to compute mean, median, standard deviation, and quartiles for numerical columns. Finally, use summariser to translate these metrics into actionable insights. Focus on highlighting outliers, distribution patterns, and data quality issues. Output structured summary with both statistical values and human-readable interpretations.",
+  "tools": [
+    {
+      "name": "file_reader",
+      "description": "Loads and parses CSV files into structured data",
+      "implementation": "builtin"
+    },
+    {
+      "name": "calculator",
+      "description": "Computes statistical metrics for numerical data",
+      "implementation": "builtin"
+    },
+    {
+      "name": "summariser",
+      "description": "Translates statistical results into plain English insights",
+      "implementation": "builtin"
+    }
+  ],
+  "graph_topology": "sequential",
+  "entry_point": "run_agent",
+  "complexity": "moderate",
+  "expected_output": "Summary object containing: data_type (string), summary_stats (object with numerical metrics), key_insights (array of strings), and data_structure (description of columns and types)"
+}

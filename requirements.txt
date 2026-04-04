@@ -1,0 +1,16 @@
+# Nexus Agent OS — minimal standalone dependencies
+
+# UI
+gradio>=5.0.0
+
+# Agent graph + LLM runtime
+langgraph>=0.2.0
+langchain-core>=0.3.0
+langchain-openai>=0.3.0
+
+# Config
+python-dotenv>=1.0.0
+typing-extensions>=4.12.0
+
+# Optional runtime surface used by mcp_server.py
+mcp>=1.0.0

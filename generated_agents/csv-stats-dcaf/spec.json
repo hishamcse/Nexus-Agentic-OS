@@ -1,0 +1,27 @@
+{
+  "agent_id": "csv-stats-dcaf",
+  "agent_name": "CSV Data Analyzer",
+  "purpose": "Generate a plain-English statistical summary and key insights from a CSV dataset.",
+  "system_prompt": "You are a data analysis assistant. When provided with a CSV file, you will: 1) Read and validate the dataset, 2) Calculate key statistics (mean, median, standard deviation, etc.), 3) Summarize findings into actionable insights. Output should be clear and easy to understand. Ensure numerical results are accurately represented and insights highlight trends or anomalies.",
+  "tools": [
+    {
+      "name": "file_reader",
+      "description": "Reads and validates the CSV dataset",
+      "implementation": "file_reader"
+    },
+    {
+      "name": "calculator",
+      "description": "Calculates numerical statistics like mean, median, and standard deviation",
+      "implementation": "builtin"
+    },
+    {
+      "name": "summariser",
+      "description": "Translates statistical results into plain-English insights",
+      "implementation": "builtin"
+    }
+  ],
+  "graph_topology": "sequential",
+  "entry_point": "run_agent",
+  "complexity": "moderate",
+  "expected_output": "A string containing numerical summary statistics and human-readable insights about the dataset"
+}

@@ -1,0 +1,115 @@
+{
+  "func-explainer-b2b9": {
+    "agent_id": "func-explainer-b2b9",
+    "agent_name": "Python Function Explainer",
+    "purpose": "Analyzes and explains any Python function's behavior in plain English step-by-step.",
+    "code_path": "/Users/syedjarullahhisham/Hishamcse/pycharm-projects/nexus-agent-os/generated_agents/func-explainer-b2b9",
+    "spec": {
+      "agent_id": "func-explainer-b2b9",
+      "agent_name": "Python Function Explainer",
+      "purpose": "Analyzes and explains any Python function's behavior in plain English step-by-step.",
+      "system_prompt": "You are a Python function explainer. First, execute the provided function using the python_repl tool to observe its behavior. Then, use the summariser tool to break down each step into plain English. Ensure explanations are clear and sequential, avoiding technical jargon.",
+      "tools": [
+        {
+          "name": "python_repl",
+          "description": "Executes Python code to analyze function behavior",
+          "implementation": "python_repl"
+        },
+        {
+          "name": "summariser",
+          "description": "Converts execution steps into plain English explanations",
+          "implementation": "custom"
+        }
+      ],
+      "graph_topology": "react",
+      "entry_point": "run_agent",
+      "complexity": "moderate",
+      "expected_output": "A string containing a step-by-step explanation of the function's behavior in plain English"
+    },
+    "status": "running",
+    "task_count": 3,
+    "restart_count": 4,
+    "request_id": "4a488f8d8d",
+    "user_request": "Create an agent that takes any Python function and explains what it does in plain English, step by step.",
+    "deploy_timestamp": "2026-04-03T13:15:31.109715+00:00",
+    "health_status": "healthy",
+    "last_health_check": "2026-04-04T16:43:06.242165+00:00",
+    "pid": 70573,
+    "arena": {
+      "wins": 1,
+      "losses": 0,
+      "ties": 0
+    },
+    "last_task_at": "2026-04-04T16:32:16.861008+00:00",
+    "last_task_duration_ms": 560693.9
+  },
+  "marketing-angles-71db": {
+    "agent_id": "marketing-angles-71db",
+    "agent_name": "Marketing Angle Generator",
+    "purpose": "Generates 10 creative marketing angles with one-sentence pitches for a given product concept.",
+    "code_path": "/Users/syedjarullahhisham/Hishamcse/pycharm-projects/nexus-agent-os/generated_agents/marketing-angles-71db",
+    "spec": {
+      "agent_id": "marketing-angles-71db",
+      "agent_name": "Marketing Angle Generator",
+      "purpose": "Generates 10 creative marketing angles with one-sentence pitches for a given product concept.",
+      "system_prompt": "You are a marketing strategist specialized in creative product positioning. When given a product concept, generate exactly 10 unique marketing angles. Each angle must include a one-sentence pitch that highlights its novelty and target audience. Focus on emotional triggers, unique selling points, and creative use cases. Ensure angles are diverse in approach and cover multiple potential market segments.",
+      "tools": [
+        {
+          "name": "llm_generator",
+          "description": "Generates marketing angles using internal language model",
+          "implementation": "builtin"
+        }
+      ],
+      "graph_topology": "chain",
+      "entry_point": "run_agent",
+      "complexity": "simple",
+      "expected_output": "Array of 10 objects, each with \"angle\" (string) and \"pitch\" (string) properties"
+    },
+    "status": "idle",
+    "task_count": 1,
+    "restart_count": 5,
+    "request_id": "690230c161",
+    "user_request": "Build an agent that takes a product concept and generates 10 creative marketing angle ideas, each with a one-sentence pitch.",
+    "deploy_timestamp": "2026-04-03T13:36:56.460221+00:00",
+    "health_status": "unresponsive",
+    "last_health_check": "2026-04-04T16:43:06.242165+00:00",
+    "pid": 77041,
+    "arena": {
+      "wins": 0,
+      "losses": 1,
+      "ties": 0
+    }
+  },
+  "nlp-to-sql-ebbd": {
+    "agent_id": "nlp-to-sql-ebbd",
+    "agent_name": "Natural Language to SQL Converter",
+    "purpose": "Generate SQL queries from natural language requests targeting relational databases",
+    "code_path": "/Users/syedjarullahhisham/Hishamcse/pycharm-projects/nexus-agent-os/generated_agents/nlp-to-sql-ebbd",
+    "spec": {
+      "agent_id": "nlp-to-sql-ebbd",
+      "agent_name": "Natural Language to SQL Converter",
+      "purpose": "Generate SQL queries from natural language requests targeting relational databases",
+      "system_prompt": "You are a SQL query generator that translates natural language requests into valid SQL. Parse temporal phrases like 'last month' into SQL date functions. Maintain proper SQL syntax for SELECT statements with WHERE clauses. Use table aliases and proper column references. Output only the SQL query without explanations.",
+      "tools": [
+        {
+          "name": "sql_generator",
+          "description": "Produces SQL queries from natural language requests",
+          "implementation": "custom"
+        }
+      ],
+      "graph_topology": "chain",
+      "entry_point": "run_agent",
+      "complexity": "moderate",
+      "expected_output": "A string containing valid SQL query with proper syntax and date function mappings"
+    },
+    "status": "stopped",
+    "task_count": 2,
+    "restart_count": 0,
+    "request_id": "0f5c1792f6",
+    "user_request": "Build an agent that takes a natural language query like 'show me all orders from last month' and writes the SQL for it.",
+    "deploy_timestamp": "2026-04-04T06:10:15.831413+00:00",
+    "health_status": "unresponsive",
+    "last_health_check": "2026-04-04T09:20:15.966862+00:00",
+    "pid": null
+  }
+}
