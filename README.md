@@ -20,6 +20,10 @@
 
 ---
 
+## Medium Article
+
+https://medium.com/@syedjarullah/nexus-an-ai-agent-operating-system-04d246cce9e2
+
 ## Overview
 
 **Nexus Agent OS** is a standalone LangGraph-powered system where the product is not just the final answer, but the **entire lifecycle of agent creation**.
