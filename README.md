@@ -73,14 +73,13 @@ Nexus is useful both as a reference architecture and as a practical local produc
 </p>
 
 <p align="center">
-  <img src="./images/nexus%202.png" width="49%" alt="Mission Control"/>
-  <img src="./images/nexus%203.png" width="49%" alt="Agent Inspector"/>
+  <img src="./images/nexus%202.png" width="100%" alt="Mission Control"/>
+  <img src="./images/nexus%203.png" width="100%" alt="Agent Inspector"/>
 </p>
 
 <p align="center">
-  <img src="./images/nexus%204.png" width="49%" alt="Arena"/>
-  <img src="./images/nexus%205.png" width="49%" alt="Pipelines"/>
-  <img src="./images/nexus%205_2.png" width="49%" alt="Explainer memory"/>
+  <img src="./images/nexus%204.png" width="100%" alt="Arena"/>
+  <img src="./images/nexus%205.png" width="100%" alt="Pipelines"/>
 </p>
 
 <details>
@@ -88,6 +87,7 @@ Nexus is useful both as a reference architecture and as a practical local produc
 
 <br/>
 
+<img src="./images/nexus%205_2.png" width="100%" alt="Explainer memory"/>
 <img src="./images/nexus%206.png" width="100%" alt="Lifecycle"/>
 <img src="./images/nexus%207.png" width="100%" alt="Source Code"/>
 <img src="./images/nexus%208.png" width="100%" alt="Analytics"/>
@@ -103,7 +103,7 @@ Nexus is useful both as a reference architecture and as a practical local produc
 Nexus itself is a **meta-graph** that builds other agents.
 
 ```mermaid
-flowchart LR
+flowchart TD
     U["User Request"] --> B["Bootstrap"]
     B --> A["Architect"]
     A --> S["Spec Writer"]
