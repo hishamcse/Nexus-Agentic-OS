@@ -33,7 +33,7 @@
     "user_request": "Create an agent that takes any Python function and explains what it does in plain English, step by step.",
     "deploy_timestamp": "2026-04-03T13:15:31.109715+00:00",
     "health_status": "healthy",
-    "last_health_check": "2026-04-04T16:43:06.242165+00:00",
+    "last_health_check": "2026-04-04T18:15:00.359459+00:00",
     "pid": 70573,
     "arena": {
       "wins": 1,
@@ -72,7 +72,7 @@
     "user_request": "Build an agent that takes a product concept and generates 10 creative marketing angle ideas, each with a one-sentence pitch.",
     "deploy_timestamp": "2026-04-03T13:36:56.460221+00:00",
     "health_status": "unresponsive",
-    "last_health_check": "2026-04-04T16:43:06.242165+00:00",
+    "last_health_check": "2026-04-04T18:15:00.359459+00:00",
     "pid": 77041,
     "arena": {
       "wins": 0,
@@ -102,14 +102,56 @@
       "complexity": "moderate",
       "expected_output": "A string containing valid SQL query with proper syntax and date function mappings"
     },
-    "status": "stopped",
+    "status": "idle",
     "task_count": 2,
     "restart_count": 0,
     "request_id": "0f5c1792f6",
     "user_request": "Build an agent that takes a natural language query like 'show me all orders from last month' and writes the SQL for it.",
     "deploy_timestamp": "2026-04-04T06:10:15.831413+00:00",
     "health_status": "unresponsive",
-    "last_health_check": "2026-04-04T09:20:15.966862+00:00",
+    "last_health_check": "2026-04-04T18:15:00.359459+00:00",
     "pid": null
+  },
+  "csv-analyzer-875a": {
+    "agent_id": "csv-analyzer-875a",
+    "agent_name": "CSV Analyzer",
+    "purpose": "Generate a plain-English statistical summary of a CSV dataset's key insights.",
+    "code_path": "/Users/syedjarullahhisham/Hishamcse/pycharm-projects/nexus-agent-os/generated_agents/csv-analyzer-875a",
+    "spec": {
+      "agent_id": "csv-analyzer-875a",
+      "agent_name": "CSV Analyzer",
+      "purpose": "Generate a plain-English statistical summary of a CSV dataset's key insights.",
+      "system_prompt": "The CSV Analyzer processes datasets by first loading the file, then calculating basic statistics, and finally summarizing the results. Provide the CSV file path to begin. The calculator tool computes metrics like mean, median, and standard deviation. The summariser then presents these in human-readable form. Ensure the data is numerical for accurate analysis.",
+      "tools": [
+        {
+          "name": "file_reader",
+          "description": "Reads CSV data from a file",
+          "implementation": "file_reader"
+        },
+        {
+          "name": "calculator",
+          "description": "Performs statistical calculations on numerical data",
+          "implementation": "custom"
+        },
+        {
+          "name": "summariser",
+          "description": "Transforms numerical results into human-readable insights",
+          "implementation": "custom"
+        }
+      ],
+      "graph_topology": "sequential",
+      "entry_point": "run_agent",
+      "complexity": "moderate",
+      "expected_output": "A plain-English summary of the dataset's statistics and key insights, presented as a string."
+    },
+    "status": "running",
+    "task_count": 0,
+    "restart_count": 0,
+    "request_id": "62a0351543",
+    "user_request": "Build me an agent that reads a CSV dataset description and produces a plain-English statistical summary with key insights.",
+    "deploy_timestamp": "2026-04-04T16:48:27.018256+00:00",
+    "health_status": "healthy",
+    "last_health_check": "2026-04-04T18:15:00.359459+00:00",
+    "pid": 84255
   }
 }

@@ -7,7 +7,7 @@ from langchain_openai import ChatOpenAI
 OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434/v1")
 OLLAMA_MODEL    = os.getenv("OLLAMA_MODEL", "qwen3:8b")
 
-SYSTEM_PROMPT = """You are a CSV Analyzer that generates plain-English statistical summaries of datasets. Describe your purpose in one sentence. When analyzing data, first load the CSV file, calculate basic statistics like mean, median, and standard deviation, then present these in human-readable form. Ensure data is numerical for accurate analysis."""
+SYSTEM_PROMPT = """The CSV Analyzer processes datasets by first loading the file, then calculating basic statistics, and finally summarizing the results. Provide the CSV file path to begin. The calculator tool computes metrics like mean, median, and standard deviation. The summariser then presents these in human-readable form. Ensure the data is numerical for accurate analysis. When asked to describe your function, respond with a one-sentence summary of your purpose."""
 
 def run_agent(input_text: str) -> str:
     """Main entry point — takes input text, returns result string."""
@@ -23,7 +23,6 @@ def run_agent(input_text: str) -> str:
         return response.content.strip()
     except Exception as e:
         return f"Error: {e}"
-
 
 if __name__ == "__main__":
     mode = "task"
