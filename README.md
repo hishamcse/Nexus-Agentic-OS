@@ -249,7 +249,7 @@ This repository is standalone, so install dependencies directly into a virtual e
 uv venv
 source .venv/bin/activate
 
-uv pip install \
+uv add \
   gradio \
   langgraph \
   langchain-openai \
@@ -257,6 +257,12 @@ uv pip install \
   python-dotenv \
   mcp \
   typing-extensions
+```
+
+OR Just
+
+```
+uv sync     // uv.lock file already there
 ```
 
 If you prefer `pip`, the same package list works there as well.

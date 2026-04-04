@@ -33,7 +33,7 @@
     "user_request": "Create an agent that takes any Python function and explains what it does in plain English, step by step.",
     "deploy_timestamp": "2026-04-03T13:15:31.109715+00:00",
     "health_status": "healthy",
-    "last_health_check": "2026-04-04T18:15:00.359459+00:00",
+    "last_health_check": "2026-04-04T18:15:30.370926+00:00",
     "pid": 70573,
     "arena": {
       "wins": 1,
@@ -72,7 +72,7 @@
     "user_request": "Build an agent that takes a product concept and generates 10 creative marketing angle ideas, each with a one-sentence pitch.",
     "deploy_timestamp": "2026-04-03T13:36:56.460221+00:00",
     "health_status": "unresponsive",
-    "last_health_check": "2026-04-04T18:15:00.359459+00:00",
+    "last_health_check": "2026-04-04T18:15:30.370926+00:00",
     "pid": 77041,
     "arena": {
       "wins": 0,
@@ -109,7 +109,7 @@
     "user_request": "Build an agent that takes a natural language query like 'show me all orders from last month' and writes the SQL for it.",
     "deploy_timestamp": "2026-04-04T06:10:15.831413+00:00",
     "health_status": "unresponsive",
-    "last_health_check": "2026-04-04T18:15:00.359459+00:00",
+    "last_health_check": "2026-04-04T18:15:30.370926+00:00",
     "pid": null
   },
   "csv-analyzer-875a": {
@@ -151,7 +151,7 @@
     "user_request": "Build me an agent that reads a CSV dataset description and produces a plain-English statistical summary with key insights.",
     "deploy_timestamp": "2026-04-04T16:48:27.018256+00:00",
     "health_status": "healthy",
-    "last_health_check": "2026-04-04T18:15:00.359459+00:00",
+    "last_health_check": "2026-04-04T18:15:30.370926+00:00",
     "pid": 84255
   }
 }
