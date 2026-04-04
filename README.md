@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:050806,40:0d1b15,70:17322a,100:245443&height=220&section=header&text=Nexus%20Agent%20OS&fontSize=44&fontColor=86efac&fontAlignY=38&desc=Meta-Orchestrated%20Agent%20Forge%20%C2%B7%20Design%20%E2%86%92%20Code%20%E2%86%92%20Validate%20%E2%86%92%20Deploy%20%E2%86%92%20Monitor&descAlignY=60&descSize=15&descColor=9fd8ba" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:050806,40:0d1b15,70:17322a,100:245443&height=220&section=header&text=Nexus%20Agentic%20OS&fontSize=44&fontAlignY=38&desc=Meta-Orchestrated%20Agent%20Forge%20%C2%B7%20Design%20%E2%86%92%20Code%20%E2%86%92%20Validate%20%E2%86%92%20Deploy%20%E2%86%92%20Monitor&descAlignY=60&descSize=15&descColor=9fd8ba&animation=twinkling" width="100%"/>
 
 <br/>
 
@@ -12,7 +12,6 @@
 
 <br/>
 
-> **Not a prompt wrapper.**
 > Nexus is a full agent operating system that **architects, writes, validates, deploys, monitors, benchmarks, evolves, and chains other agents at runtime**.
 
 [Why It Stands Out](#why-nexus-stands-out) · [Architecture](#architecture) · [Quick Start](#quick-start) · [Screenshots](#screenshots) · [Project Structure](#project-structure)
@@ -36,8 +35,6 @@ Nexus then:
 6. Monitors health and restarts failures.
 7. Lets you inspect, benchmark, chain, and evolve it from a dedicated UI.
 
-This repository contains **one polished product**, not a collection of unrelated demos.
-
 ---
 
 ## Why Nexus Stands Out
@@ -47,7 +44,7 @@ This repository contains **one polished product**, not a collection of unrelated
 - **True graph routing**: validation failures flow back into `code_gen` through a real conditional LangGraph edge.
 - **Operational UI**: Mission Control, Inspector, Arena, Pipelines, Lifecycle, Analytics, and Source Code are built into the product.
 - **Persistent runtime state**: registry, memory, arena results, and pipeline runs survive restarts through JSON persistence.
-- **Local-first**: runs on Ollama without requiring cloud APIs.
+- **Local-first**: runs on Ollama without requiring cloud APIs. But using paid models will definitely improve this further.
 
 ---
 
@@ -519,6 +516,6 @@ SDE @ IQVIA · .NET & Agentic AI
 
 *If this helped you understand agent systems, consider starring ⭐*
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2b6cb0,50:1a2a4a,100:0a0d12&height=100&section=footer" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&olor=0:050806,40:0d1b15,70:17322a,100:245443&height=100&section=footer" width="100%"/>
 
 </div>
