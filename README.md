@@ -429,12 +429,6 @@ This lets other MCP-capable systems interact with Nexus as a runtime agent regis
 
 ---
 
-## ⛯ Mind Map
-
-<img src="./NotebookLM%20Mind%20Map.png" alt="mind-map" />
-
----
-
 ## Project Structure
 
 ```text
