@@ -429,6 +429,12 @@ This lets other MCP-capable systems interact with Nexus as a runtime agent regis
 
 ---
 
+## Video Explanation by NotebookLM
+
+https://github.com/user-attachments/assets/9e3e1187-b52f-4d9c-8f3c-50facee11978
+
+---
+
 ## ⛯ Mind Map
 
 <img src="./NotebookLM%20Mind%20Map.png" alt="mind-map" />
