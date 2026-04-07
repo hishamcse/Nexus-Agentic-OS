@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:050806,40:0d1b15,70:17322a,100:245443&height=220&section=header&text=Nexus%20Agentic%20OS&fontSize=44&fontAlignY=38&desc=Meta-Orchestrated%20Agent%20Forge%20%C2%B7%20Design%20%E2%86%92%20Code%20%E2%86%92%20Validate%20%E2%86%92%20Deploy%20%E2%86%92%20Monitor&descAlignY=60&descSize=15&descColor=9fd8ba&animation=twinkling" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:050806,40:0d1b15,70:17322a,100:245443&height=220&section=header&text=🧬%20Nexus%20Agentic%20OS&fontSize=44&fontAlignY=38&desc=Meta-Orchestrated%20Agent%20Forge%20%C2%B7%20Design%20%E2%86%92%20Code%20%E2%86%92%20Validate%20%E2%86%92%20Deploy%20%E2%86%92%20Monitor&descAlignY=60&descSize=15&descColor=9fd8ba&animation=twinkling" width="100%"/>
 
 <br/>
 
