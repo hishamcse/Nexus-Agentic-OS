@@ -526,13 +526,14 @@ That is what this repository demonstrates end-to-end.
 - https://github.com/hishamcse/agentarium-multi-framework-agents
 - https://github.com/hishamcse/Evolvarium-Advanced-Agentic-AI-Systems
 - https://github.com/hishamcse/LinkGenius-AI
+- https://github.com/hishamcse/hexarena-othello-llm-DRL-agent-arena
 
 ---
 
 <div align="center">
 
 **Built by [Syed Jarullah Hisham](https://github.com/hishamcse)**
-SDE @ IQVIA · .NET & Agentic AI
+SDE 2 @ IQVIA · BE (.NET & Agentic AI)
 
 <br/>
 
