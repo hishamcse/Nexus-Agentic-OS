@@ -20,6 +20,12 @@
 
 ---
 
+## Video Explanation by GitDiagram
+
+https://github.com/user-attachments/assets/28b65fea-d093-4de8-bfb9-af80e026c5b8
+
+---
+
 ## Medium Article
 
 https://medium.com/@syedjarullah/nexus-an-ai-agent-operating-system-04d246cce9e2
